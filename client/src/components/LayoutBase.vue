@@ -12,7 +12,7 @@ import InstagramIcon from './icons/InstagramIcon.vue';
             <slot></slot>
         </main>
         <footer class="bg-black p-3 flex flex-row justify-center mt-auto">
-            <a>
+            <a href="https://www.instagram.com/korben_dallas_country_club/" target="_blank">
                 <InstagramIcon></InstagramIcon>
             </a>
         </footer>
