@@ -4,6 +4,8 @@ import duration from 'dayjs/plugin/duration';
 
 import { ref, onMounted, watch } from 'vue';
 
+const pad = (n) => n.toString().padStart(2, "0");
+
 dayjs.extend(duration);
 
 const props = defineProps({
@@ -13,20 +15,20 @@ const props = defineProps({
     },
 })
 
-const days = ref(0);
-const hours = ref(0);
-const minutes = ref(0);
-const seconds = ref(0);
+const days = ref("0");
+const hours = ref("0");
+const minutes = ref("0");
+const seconds = ref("0");
 
 const updateCountdown = () => {
     const now = dayjs();
     const diff = dayjs(props.targetDate).diff(now);
     const duration = dayjs.duration(diff);
 
-    days.value = Math.floor(duration.asDays());
-    hours.value = duration.hours();
-    minutes.value = duration.minutes();
-    seconds.value = duration.seconds();
+    days.value = pad(Math.floor(duration.asDays()));
+    hours.value = pad(duration.hours());
+    minutes.value = pad(duration.minutes());
+    seconds.value = pad(duration.seconds());
 };
 
 onMounted(() => {
