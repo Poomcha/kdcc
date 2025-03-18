@@ -9,6 +9,7 @@
 
 @media screen and (min-width: 768px) {
   .layout {
-    background-image: url("@/assets/images/kdcc-background-landscape.webp");
+    background-image: url("@/assets/images/kdcc-background-large-compressed.webp");
+    background-position: center bottom;
   }
 }

@@ -11,8 +11,8 @@ const targetDate = ref(new Date(2025, 3, 4, 12, 0, 0))
 
 <template>
   <LayoutBase>
-    <div class="flex flex-col gap-6 justify-center">
-      <h1 class="text-black text-center font-bold text-2xl sm:text-3xl md:text-3xl lg:text-5xl">KORBEN DALLAS COUNTRY CLUB</h1>
+    <div class="p-9 flex flex-col gap-9 justify-center backdrop-blur-xs bg-black/5">
+      <h1 class="text-black text-center font-[rubik] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">KORBEN DALLAS COUNTRY CLUB</h1>
       <Countdown :targetDate="dayjs(targetDate)"></Countdown>
     </div>
   </LayoutBase>

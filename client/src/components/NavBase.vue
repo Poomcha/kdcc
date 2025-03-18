@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 <template>
     <div>
         <nav>
-            <RouterLink to="/">k.d.c.c.</RouterLink>
+            <RouterLink to="/" class="font-semibold">KDCC</RouterLink>
         </nav>
     </div>
 </template>
