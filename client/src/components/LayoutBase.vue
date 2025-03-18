@@ -8,7 +8,7 @@ import InstagramIcon from './icons/InstagramIcon.vue';
         <header class="bg-black/80 backdrop-blur-3xl p-3 flex sm:text-lg md:text-xl">
             <NavBase></NavBase>
         </header>
-        <main class="p-1.5 w-screen h-full flex justify-center items-center">
+        <main class="p-6 w-screen h-full flex justify-center items-center">
             <slot></slot>
         </main>
         <footer class="bg-black/90 backdrop-blur-xs p-3 flex flex-row justify-center mt-auto">

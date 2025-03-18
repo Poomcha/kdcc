@@ -45,7 +45,7 @@ const countdownSeparatorClass = "h-1 border-t-3 lg:border-t-5 shadow-[0_0_5px_rg
 </script>
 
 <template>
-    <div class="flex gap-3 sm:gap-6 md:gap-9 text-black justify-center font-bold text-xl sm:text-2xl lg:text-3xl">
+    <div class="flex gap-1.5 sm:gap-6 md:gap-9 text-black justify-center font-bold text-2xl sm:text-3xl lg:text-4xl">
         <div :class="countdownContainerClass">
             <p class="text-center">D</p>
             <hr :class="countdownSeparatorClass">
