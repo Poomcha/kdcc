@@ -40,30 +40,30 @@ watch(() => props.targetDate, () => {
     updateCountdown();
 });
 
-const countdownContainerClass = "flex flex-col gap-1.5 lg:gap-3 border-3 lg:border-5 p-1.5 lg:p-3 w-15 lg:w-30"
-
+const countdownContainerClass = "flex flex-col gap-1.5 lg:gap-3 border-3 lg:border-5 p-1.5 lg:p-3 w-15 lg:w-30 shadow-[0_0_5px_rgba(0,0,0,0.25)]"
+const countdownSeparatorClass = "h-1 border-t-3 lg:border-t-5 shadow-[0_0_5px_rgba(0,0,0,0.25)]";
 </script>
 
 <template>
     <div class="flex gap-3 sm:gap-6 md:gap-9 text-black justify-center font-bold text-xl sm:text-2xl lg:text-3xl">
         <div :class="countdownContainerClass">
             <p class="text-center">D</p>
-            <hr class="h-1 border-t-3 lg:border-t-5">
+            <hr :class="countdownSeparatorClass">
             <p class="text-center">{{ days }}</p>
         </div>
         <div :class="countdownContainerClass">
             <p class="text-center">H</p>
-            <hr class="h-1 border-t-3 lg:border-t-5">
+            <hr  :class="countdownSeparatorClass">
             <p class="text-center">{{ hours }}</p>
         </div>
         <div :class="countdownContainerClass">
             <p class="text-center">M</p>
-            <hr class="h-1 border-t-3 lg:border-t-5">
+            <hr  :class="countdownSeparatorClass">
             <p class="text-center">{{ minutes }}</p>
         </div>
         <div :class="countdownContainerClass">
             <p class="text-center">S</p>
-            <hr class="h-1 border-t-3 lg:border-t-5">
+            <hr  :class="countdownSeparatorClass">
             <p class="text-center">{{ seconds }}</p>
         </div>
     </div>
